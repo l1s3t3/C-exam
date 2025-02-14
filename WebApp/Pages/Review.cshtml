@@ -1,0 +1,13 @@
+﻿@page
+@model WebApp.Pages.Review
+@{
+    Layout = "_Layout";
+}
+
+<h2>Review Your Books</h2>
+
+<form method="post">
+    <label>Enter your UserName:</label>
+    <input type="text" asp-for="UserName" />
+    <button type="submit">Go to Review Page</button>
+</form>

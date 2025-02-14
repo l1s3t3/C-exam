@@ -1,0 +1,57 @@
+@page "{memberId?}"
+@model WebApp.Pages_MemberReviews.CreateModel
+@{
+    ViewData["Title"] = "Create Member Review";
+}
+
+<h1>Create Member Review</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- We remove the 'ReviewerId' dropdown 
+                 because we automatically set the reviewer in code. -->
+
+            <!-- ReviewedMemberId -->
+            <div class="form-group">
+                <label asp-for="MemberReview.ReviewedMemberId" class="control-label"></label>
+                <select asp-for="MemberReview.ReviewedMemberId" class="form-control" asp-items="ViewBag.ReviewedMemberList"></select>
+            </div>
+
+            <!-- Rating -->
+            <div class="form-group">
+                <label asp-for="MemberReview.Rating" class="control-label"></label>
+                <input asp-for="MemberReview.Rating" class="form-control" />
+                <span asp-validation-for="MemberReview.Rating" class="text-danger"></span>
+            </div>
+
+            <!-- Comments -->
+            <div class="form-group">
+                <label asp-for="MemberReview.Comments" class="control-label"></label>
+                <input asp-for="MemberReview.Comments" class="form-control" />
+                <span asp-validation-for="MemberReview.Comments" class="text-danger"></span>
+            </div>
+
+            <!-- CreatedAt -->
+            <div class="form-group">
+                <label asp-for="MemberReview.CreatedAt" class="control-label"></label>
+                <input asp-for="MemberReview.CreatedAt" class="form-control" />
+                <span asp-validation-for="MemberReview.CreatedAt" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

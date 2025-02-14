@@ -1,0 +1,173 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApp
+build_property.RootNamespace = WebApp
+build_property.ProjectDir = C:\Users\liset\RiderProjects\icd0008-24f\Exam\WebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\liset\RiderProjects\icd0008-24f\Exam\WebApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/BookReviews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1Jldmlld3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/BookReviews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1Jldmlld3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/BookReviews/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1Jldmlld3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/BookReviews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1Jldmlld3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/BookReviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1Jldmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Books/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Books/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Exchange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhjaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviewEntry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3RW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviews/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberReviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyUmV2aWV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Members/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Members/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Members/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Members/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Members/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/MemberTrades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyVHJhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Trades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Trades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhZGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Trades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhZGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Trades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Trades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liset/RiderProjects/icd0008-24f/Exam/WebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1lnhnt7yf2

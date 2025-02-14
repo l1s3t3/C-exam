@@ -1,0 +1,61 @@
+@page
+@model WebApp.Pages_BookReviews.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All the reviews!</h1>
+
+<p>
+    <a asp-page="Create" class="btn-styled">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookReview[0].Book)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookReview[0].Reviewer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookReview[0].Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookReview[0].Comments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookReview[0].CreatedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BookReview) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book!.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reviewer!.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

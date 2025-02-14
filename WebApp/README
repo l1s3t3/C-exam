@@ -1,0 +1,10 @@
+
+
+
+Olles WebApp kaustas
+
+dotnet aspnet-codegenerator razorpage -m Book -dc AppDbContext -udl -outDir Pages/Books --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m BookReview -dc AppDbContext -udl -outDir Pages/BookReviews --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m Member -dc AppDbContext -udl -outDir Pages/Members --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m MemberReview -dc AppDbContext -udl -outDir Pages/MemberReviews --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m Trade -dc AppDbContext -udl -outDir Pages/Trades --referenceScriptLibraries

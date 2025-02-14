@@ -1,0 +1,24 @@
+﻿@page
+@model WebApp.Pages.Exchange
+@{
+    Layout = "_Layout";
+}
+
+<h2>Exchange Your Books</h2>
+
+<form method="post">
+    <label>Enter your UserName:</label>
+    <input type="text" asp-for="UserName" />
+
+    <br /><br />
+    <input type="checkbox" asp-for="ViewYourTrades" />
+    <label asp-for="ViewYourTrades">View Your info</label>
+
+    <br /><br />
+    <button type="submit">Go</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red">@Model.ErrorMessage</p>
+}

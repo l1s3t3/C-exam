@@ -1,0 +1,60 @@
+@page
+@model WebApp.Pages_MemberReviews.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MemberReview</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MemberReview.Id" />
+            <div class="form-group">
+                
+                <label asp-for="MemberReview.ReviewerId" class="control-label"></label>
+                <select asp-for="MemberReview.ReviewerId" class="form-control" asp-items="ViewBag.ReviewerId"></select>
+                <span asp-validation-for="MemberReview.ReviewerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="MemberReview.ReviewedMemberId" class="control-label"></label>
+                <select asp-for="MemberReview.ReviewedMemberId" class="form-control" asp-items="ViewBag.ReviewedMemberId"></select>
+                <span asp-validation-for="MemberReview.ReviewedMemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="MemberReview.Rating" class="control-label"></label>
+                <input asp-for="MemberReview.Rating" class="form-control" />
+                <span asp-validation-for="MemberReview.Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="MemberReview.Comments" class="control-label"></label>
+                <input asp-for="MemberReview.Comments" class="form-control" />
+                <span asp-validation-for="MemberReview.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="MemberReview.CreatedAt" class="control-label"></label>
+                <input asp-for="MemberReview.CreatedAt" class="form-control" />
+                <span asp-validation-for="MemberReview.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,49 @@
+@page
+@model WebApp.Pages_BookReviews.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BookReview</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookReview.Book)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookReview.Book!.Author)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookReview.Reviewer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookReview.Reviewer!.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookReview.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookReview.Rating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookReview.Comments)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookReview.Comments)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BookReview.CreatedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BookReview.CreatedAt)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.BookReview.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

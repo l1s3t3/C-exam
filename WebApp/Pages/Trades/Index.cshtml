@@ -1,0 +1,41 @@
+@page
+@model WebApp.Pages_Trades.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>All Trades</h2>
+<p>
+    <a asp-page="Create">Create New Trade</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Initiator</th>
+        <th>Target Book</th>
+        <th>Offered Book</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if(Model.TradeList != null)
+    {
+        foreach (var trade in Model.TradeList)
+        {
+            <tr>
+                <td>@trade.Initiator?.UserName</td>
+                <td>@trade.TargetBook?.Title</td>
+                <td>@trade.OfferedBook?.Title</td>
+                <td>@trade.Status</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@trade.Id">Edit</a> |
+                    <a asp-page="Delete" asp-route-id="@trade.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>

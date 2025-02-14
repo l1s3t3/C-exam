@@ -1,0 +1,88 @@
+﻿@page "{memberId?}"
+@using Domain
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model WebApp.Pages.MemberTrades
+@{
+    Layout = "_Layout";
+}
+<h2>Your Trades</h2>
+
+@if (!Model.TradeList.Any())
+{
+    <p>You have no trades pending or accepted/declined</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Initiator</th>
+            <th>Target Book</th>
+            <th>Offered Book</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var trade in Model.TradeList)
+        {
+            <tr>
+                <td>@trade.Initiator?.UserName</td>
+                <td>@trade.TargetBook?.Title (@(trade.TargetBook?.Owner?.UserName ?? "N/A"))</td>
+                <td>@trade.OfferedBook?.Title (@(trade.OfferedBook?.Owner?.UserName ?? "N/A"))</td>
+                <td>@trade.Status</td>
+                <td>
+                    @* If you are the owner of the targetBook, show Accept/Discard *@
+                    @if (Model.MemberId == trade.TargetBook?.OwnerId && trade.Status == ETradeStatus.Pending)
+                    {
+                        <form method="post" asp-page-handler="Accept" style="display:inline;">
+                            <input type="hidden" name="TradeId" value="@trade.Id" />
+                            <button type="submit" class="btn btn-success btn-sm">Accept</button>
+                        </form>
+                        <form method="post" asp-page-handler="Discard" style="display:inline;">
+                            <input type="hidden" name="TradeId" value="@trade.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Discard</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span>N/A</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+}
+
+<h2>Reviews from Others About You</h2>
+
+@if (!Model.ReviewsAboutUser.Any())
+{
+    <p>No reviews from others yet.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Reviewer</th>
+            <th>Rating</th>
+            <th>Comments</th>
+            <th>Created At</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var rev in Model.ReviewsAboutUser)
+        {
+            <tr>
+                <td>@rev.Reviewer?.UserName</td>
+                <td>@rev.Rating</td>
+                <td>@rev.Comments</td>
+                <td>@rev.CreatedAt</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

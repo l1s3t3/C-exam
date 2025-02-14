@@ -1,0 +1,58 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2 class="mb-4">Welcome to Book Exchange!</h2>
+
+<div class="index-links">
+    <a asp-page="Review" class="btn-link-big">Review your books</a>
+    <a asp-page="MemberReviewEntry" class="btn-link-big">Review others</a>
+    <a asp-page="Exchange" class="btn-link-big">Exchange books</a>
+</div>
+
+
+<hr class="my-4" />
+
+<h2>Search books</h2>
+<!-- Search form -->
+<form method="get" class="mb-4">
+    <input type="text" name="searchString" value="@Model.SearchString" placeholder="Search by Title, Author, Description, or Genre" />
+    <input type="submit" value="Search" />
+</form>
+
+<h2>All books</h2>
+<!-- Search results -->
+<table>
+    <thead>
+    <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Description</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Owner</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Model.Books != null && Model.Books.Any())
+    {
+        foreach (var book in Model.Books)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.Description</td>
+                <td>@book.Genre</td>
+                <td>@(book.Owner?.UserName ?? "N/A")</td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="5" style="text-align: center;">No books found.</td>
+        </tr>
+    }
+    </tbody>
+</table>
